@@ -1,5 +1,6 @@
 .barra-superior-secundaria {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #ffffff;
 }
