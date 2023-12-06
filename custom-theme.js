@@ -1,5 +1,5 @@
 (function() {
-    window.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('li.tel-phone').remove()
         
         document.querySelector('.canais-contato.span9')
