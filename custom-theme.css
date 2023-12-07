@@ -7,3 +7,8 @@
 .barra-superior-secundaria .primeira-compra {
   text-align: center;
 }
+
+.qtd-button.qtd-up, 
+.qtd-button.qtd-down {
+  cursor: pointer;
+}
