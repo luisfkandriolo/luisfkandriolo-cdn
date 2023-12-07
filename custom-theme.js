@@ -12,5 +12,11 @@ $(document).ready(function () {
         ? $(".barra-superior-secundaria").hide()
         : $(".barra-superior-secundaria").show();
     });
+
+    setInterval(() => {
+      document.querySelectorAll(".adc-fav.hidden-phone")?.forEach((item) => {
+        item ? item.remove() : return
+      })
+    }, 500)
   }, 300);
 });
