@@ -16,3 +16,7 @@
 .li-whatsapp a {
   bottom: 16px;
 }
+
+input.ui-autocomplete-input {
+  border-radius: 50px;
+}
