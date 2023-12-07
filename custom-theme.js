@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     setInterval(() => {
       document.querySelectorAll(".adc-fav.hidden-phone")?.forEach((item) => {
-        item ? item.remove() : return
+        if (item) item.remove()
       })
     }, 500)
   }, 300);
