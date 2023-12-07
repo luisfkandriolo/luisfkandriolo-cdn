@@ -12,3 +12,7 @@
 .qtd-button.qtd-down {
   cursor: pointer;
 }
+
+.li-whatsapp a {
+  bottom: 16px;
+}
