@@ -26,3 +26,7 @@ input.ui-autocomplete-input {
     display: none !important;
   }
 }
+
+#rodape > div.institucional.fundo-secundario > div > div > div.span9 > div > div:nth-child(3) > ul > li:nth-child(1) {
+  display: none !important;
+}
