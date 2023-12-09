@@ -14,7 +14,7 @@ $(document).ready(function () {
     });
 
     $(".hidden-phone.rastreio-rapido > a > span").html('Melhor Rastreio')
-    $(".rastreio-rapido, .rastreio-mb")
+    $(".rastreio-rapido, .rastreio-mb").off()
     $(".hidden-phone.rastreio-rapido > a").attr('href','https://melhorrastreio.com.br/')
     $(".hidden-phone.rastreio-rapido > a").attr('target','blank')
 
