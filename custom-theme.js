@@ -13,6 +13,10 @@ $(document).ready(function () {
         : $(".barra-superior-secundaria").show();
     });
 
+    $(".hidden-phone.rastreio-rapido > a > span").html('Melhor Rastreio')
+    $(".hidden-phone.rastreio-rapido > a").attr('href','https://melhorrastreio.com.br/')
+    $(".hidden-phone.rastreio-rapido > a").attr('target','blank')
+
     setInterval(() => {
       document.querySelectorAll(".adc-fav.hidden-phone")?.forEach((item) => {
         if (item) item.remove()
