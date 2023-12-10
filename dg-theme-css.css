@@ -5510,7 +5510,10 @@ div#instagram h2 a {
     .conteudo-topo .menu.superior.visible-phone ul.nivel-dois,
     .prod-counter,
     .produto-compartilhar .lista-redes .fa-whatsapp {
-        display: none;
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 300ms;
     }
     .atalhos-mobile {
         background: #3F78BB;
@@ -5676,7 +5679,7 @@ div#instagram h2 a {
     #rodape .links-rodape .office-hours.active,
     #rodape .links-rodape ul.active,
     .conteudo-topo .menu.superior.visible-phone ul.nivel-dois.active {
-        display: block;
+        max-height: 200px;
     }
     .conteudo-topo .menu.superior.visible-phone ul.action-links,
     .conteudo-topo .menu.superior.visible-phone ul.action-links li,
