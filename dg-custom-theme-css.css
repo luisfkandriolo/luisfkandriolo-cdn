@@ -97,6 +97,7 @@ ul.keywords-tags {
 }
 .keywords-tags li {
     display: contents !important;
+    cursor: pointer;
 }
 .keywords-tags li a {
     padding: 8.5px;
