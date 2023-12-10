@@ -1,3 +1,13 @@
 #cabecalho {
-  background-color: #3F78BB;
+  background: #3F78BB;
+}
+#rodape .institucional {
+  background: #3F78BB;
+}
+#rodape .institucional a, 
+#rodape .institucional p {
+  color: #e7e7e7;
+}
+#rodape .links-rodape-atendimento .icon {
+  fill: #ffffff;
 }
