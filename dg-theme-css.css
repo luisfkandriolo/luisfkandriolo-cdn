@@ -5515,6 +5515,10 @@ div#instagram h2 a {
         overflow: hidden;
         transition: all 300ms;
     }
+    .span4.links-rodape ul{
+        margin: 0;
+        padding: 0;
+    }
     .atalhos-mobile {
         background: #3F78BB;
         border: none;
@@ -5680,6 +5684,10 @@ div#instagram h2 a {
     #rodape .links-rodape ul.active,
     .conteudo-topo .menu.superior.visible-phone ul.nivel-dois.active {
         max-height: 200px;
+    }
+    .span4.links-rodape ul.active {
+        margin: 20px;
+        padding: 20px;
     }
     .conteudo-topo .menu.superior.visible-phone ul.action-links,
     .conteudo-topo .menu.superior.visible-phone ul.action-links li,
