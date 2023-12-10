@@ -5708,8 +5708,8 @@ div#instagram h2 a {
         top: 0;
         right: 0;
         width: 100%;
-        height: 72px;
-        line-height: 72px;
+        height: 64px;
+        line-height: 64px;
         font-size: 20px;
         font-weight: 600;
         color: #fff;
@@ -5838,7 +5838,7 @@ div#instagram h2 a {
 .full.menu .offers .nivel-dois .counter-offer .promo .title,
 .full.menu .offers .nivel-dois .counter-offer .promo .title:after,
 .listagem.aproveite-tambem .listagem-item .acoes-produto .botao-comprar {
-    background: #fff;
+    background: #3F78BB;
 }
 .full.menu {
     border-top: 1px solid #444;
