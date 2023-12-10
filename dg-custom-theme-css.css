@@ -23,12 +23,12 @@ a.scrollToTop {
 
 .float-open, 
 .float-items > li > a {
-  background: #3F78BB;
+  background: #3F78BB !important;
 }
 
 .float-open:hover, 
 .float-items > li:hover > a {
-  background: #A8BA3F;
+  background: #A8BA3F !important;
 }
 
 .row-fluid.banner.mini-banner {
