@@ -21,6 +21,16 @@ a.scrollToTop {
     color: #fff;
 }
 
+.float-open, 
+.float-items > li > a {
+  background: #3F78BB;
+}
+
+.float-open:hover, 
+.float-items > li:hover > a {
+  background: #A8BA3F;
+}
+
 .row-fluid.banner.mini-banner {
   display: none;
 }
@@ -28,4 +38,10 @@ a.scrollToTop {
   .row-fluid.banner.mini-banner {
     display: block;
   }
+}
+
+.strong.cor-principal.titulo {
+    color: #A8BA3F !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
 }
