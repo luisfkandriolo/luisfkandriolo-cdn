@@ -18,7 +18,7 @@ $(document).ready(function () {
     setInterval(() => {
       if (!document.querySelector("body.pagina-produto")) return
       
-      document.querySelectorAll(".keywords-tags")?.forEach((item) => {
+      document.querySelectorAll(".keywords-tags li")?.forEach((item) => {
         let keyword = item.innerText
         let keywordSearch = keyword.replace(" ","+")
   
