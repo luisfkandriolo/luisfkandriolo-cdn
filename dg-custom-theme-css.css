@@ -90,3 +90,21 @@ strong.cor-principal.titulo {
     min-width: 220px;
     display: inline-block;
 }
+ul.keywords-tags {
+    margin: 0 !important;
+    text-align: center;
+    border: 10px solid #e2121200 !important;
+}
+.keywords-tags li {
+    display: contents !important;
+}
+.keywords-tags li a {
+    padding: 8.5px;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    font-size: 10px;
+    line-height: 50px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: inherit;
+}
