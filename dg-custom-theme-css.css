@@ -115,3 +115,13 @@ ul.keywords-tags {
 #cabecalho.fixed .open-menu .line {
   background: #fff !important;
 }
+
+.spanNone.banner.tarja {
+  max-height: auto;
+}
+.spanNone.banner.tarja.slick-initialized.slick-slider {
+  .slick-prev.slick-arrow,
+  .slick-next.slick-arrow {
+    display: none;
+  }
+}
