@@ -5369,11 +5369,11 @@ div#instagram ul li a img {
     position: fixed;
     z-index: 999;
     bottom: 1rem;
-    right: 2rem;
+    right: 15px;
     width: 52px;
     height: 52px;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     display: none;
     text-transform: uppercase;
     -webkit-box-sizing: border-box;
@@ -5888,7 +5888,6 @@ div#instagram h2 a {
     background: #efa022 !important;
 }
 .scrollToTop {
-    margin-right: 40px;
     color: #fff;
 }
 .scrollToTop:active,
