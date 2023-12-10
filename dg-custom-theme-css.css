@@ -31,6 +31,9 @@ a.scrollToTop {
   background: #222A33 !important;
 }
 
+.modulo.span4.sem-banner {
+  display: none;
+}
 .row-fluid.banner.mini-banner {
   display: none;
 }
