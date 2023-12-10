@@ -5841,14 +5841,13 @@ div#instagram h2 a {
     background: #3F78BB;
 }
 .full.menu {
-    border-top: 1px solid #444;
-    background: #efefef;
+    background: #3F78BB;
 }
 .full.menu .conteiner .nivel-um > li,
 .full.menu .conteiner .nivel-um > li:not(:hover),
 .full.menu .conteiner .nivel-um > li > a > .titulo,
 .full.menu .conteiner .nivel-um > li > a > .titulo:not(:hover) {
-    color: #444;
+    color: #fff;
 }
 .full.menu .conteiner .nivel-um > li:hover,
 .full.menu .conteiner .nivel-um > li > a > .titulo:hover {
