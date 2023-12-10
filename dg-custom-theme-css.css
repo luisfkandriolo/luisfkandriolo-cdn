@@ -117,11 +117,10 @@ ul.keywords-tags {
 }
 
 .spanNone.banner.tarja {
-  max-height: auto;
+  max-height: auto !important;
 }
-.spanNone.banner.tarja.slick-initialized.slick-slider {
-  .slick-prev.slick-arrow,
-  .slick-next.slick-arrow {
-    display: none;
-  }
+
+.spanNone.banner.tarja.slick-initialized.slick-slider .slick-prev.slick-arrow,
+.spanNone.banner.tarja.slick-initialized.slick-slider .slick-next.slick-arrow {
+    display: none !important;
 }
