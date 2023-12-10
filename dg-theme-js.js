@@ -4418,9 +4418,6 @@
           $(".cr.conteiner").append(
             '<div id="cr-li" style="opacity:1!important;display:inline-block!important;visibility:visible!important;margin:0!important;position:static!important;overflow:visible!important;padding:0 15px 5px 0px!important;"><a href="https://lojaintegrada.com.br/" target="_blank" title="Loja Integrada" style="opacity:1!important;display:inline-block!important;visibility:visible!important;margin:0!important;position:static!important;overflow:visible!important;float:right!important;"><img src="https://cdn.awsli.com.br/150x150/307/307092/arquivos/plataforma-loja-integrada.png" title="Loja Integrada" alt="Loja Integrada" style="opacity:1!important;display:inline-block!important;visibility:visible!important;margin:0!important;position:static!important;overflow:visible!important;max-width: 120px;"></a></div>'
           ),
-          $(".cr.conteiner").append(
-            '<div id="cr-alpha-theme" style="opacity:1!important;display:inline-block!important;visibility:visible!important;margin:0!important;position:static!important;overflow:visible!important;padding:0 10px 2px 0px!important;"><a href="http://www.alphatheme.me" rel="nofollow" title="Alpha Theme Templates Loja Virtual" target="_blank" style="opacity:1!important;display:inline-block!important;visibility:visible!important;margin:0!important;position:static!important;overflow:visible!important;float:right!important;"><img src="https://cdn.awsli.com.br/918/918686/arquivos/alpha-theme-logo.png" style="width: 140px; height:25px; vertical-align:middle;" /></a></div></div>'
-          ),
           $("head").append(
             $(
               "<style>@media screen and (max-width:767px){.span9.span12 p{margin-bottom:-25px!important}}.span9.span12 p{padding:5px 0 15px 0}</style>"
