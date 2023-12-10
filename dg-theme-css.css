@@ -1743,6 +1743,18 @@ body.tema-escuro {
 .tema-escuro .sugestoes {
     background-color: #000;
 }
+
+.menu .nivel-dois {
+    margin-left: 10px;
+}
+
+.menu .nivel-tres {
+    display: block;
+    position: initial;
+    box-shadow: none;
+    margin-left: 10px;
+}
+    
 .tema-escuro .parcelas-produto .nav-tabs li a {
     background-color: inherit;
     -webkit-box-shadow: none;
@@ -5501,7 +5513,7 @@ div#instagram h2 a {
         display: none;
     }
     .atalhos-mobile {
-        background: #222;
+        background: #3F78BB;
         border: none;
         z-index: 10;
         position: relative;
@@ -5573,14 +5585,14 @@ div#instagram h2 a {
         content: "\f0c9";
         font-size: 2em;
         font-weight: 400;
-        color: #fff;
+        color: #000;
     }
     .conteudo-topo .busca-mobile.fixed {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        background: #222;
+        background: #3F78BB;
         -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
         box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
         z-index: 999;
@@ -5601,15 +5613,15 @@ div#instagram h2 a {
     }
     .conteudo-topo .menu.superior.visible-phone:before {
         content: "Categorias";
-        color: #9b9b9b;
+        color: #fff;
         font-size: 20px;
         font-weight: 600;
         display: block;
         padding: 20px;
-        background: #fff;
+        background: #3F78BB;
     }
     .conteudo-topo .menu.superior.visible-phone .wrap {
-        height: 100%;
+        height: calc(100vh - 64px);
         background: #fff;
         width: 80%;
     }
@@ -5628,7 +5640,8 @@ div#instagram h2 a {
         font-weight: 600;
     }
     .conteudo-topo .menu.superior.visible-phone ul.nivel-um {
-        height: 320px;
+        height: calc(100% - 100px);
+        border-bottom: 1px solid #ddd;
         overflow: auto;
     }
     .conteudo-topo .menu.superior.visible-phone ul.nivel-um > li.com-filho > a i {
@@ -5671,7 +5684,7 @@ div#instagram h2 a {
         margin: 20px 0;
     }
     .conteudo-topo .menu.superior.visible-phone ul.action-links li a {
-        color: #9b9b9b;
+        color: #4f4f4f;
         font-size: 20px;
         font-weight: 600;
     }
