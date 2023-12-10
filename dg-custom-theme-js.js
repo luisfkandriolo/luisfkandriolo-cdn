@@ -1,8 +1,8 @@
 $(document).ready(function () {
   setTimeout(() => {
-    
-    window.addEventListener("scroll", (event) => {
-      let scroll = this.scrollY;
+
+    $(window).scroll(function (event) {
+      var scroll = $(window).scrollTop();
       if (scroll > 0) {
         $(".header-cupom").hide()
         $("#cabecalho").css("margin-top","0")
