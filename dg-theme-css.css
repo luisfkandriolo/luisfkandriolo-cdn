@@ -5074,7 +5074,7 @@ div#instagram .icon {
 }
 div#instagram .icon .cls-1 {
     fill: #44e0c1;
-    fill: #ba493f;
+    fill: #ffc05a;
 }
 div#instagram h2 {
     padding: 0 0 20px;
@@ -5478,7 +5478,7 @@ div#instagram ul li a img {
 .adic-favo:hover,
 .full.menu .offers .nivel-dois .counter-offer .promo p strong,
 div#instagram h2 a {
-    color: #ba493f;
+    color: #ffc05a;
 }
 @media only screen and (max-width: 767px) {
     #cabecalho {
@@ -5791,11 +5791,11 @@ div#instagram h2 a {
     }
     .atalhos-mobile ul li a .icon,
     .atalhos-mobile ul li a .icon * {
-        fill: #ba493f;
+        fill: #ffc05a;
     }
     .conteudo-topo .busca-mobile .atalho-menu,
     .conteudo-topo .menu.superior.visible-phone .menu-close:after {
-        background: #ba493f;
+        background: #ffc05a;
     }
 }
 #cabecalho {
@@ -5837,26 +5837,26 @@ div#instagram h2 a {
 }
 .full.menu .conteiner .nivel-um > li.offers > a {
     cursor: pointer;
-    background: #ba493f !important;
+    background: #ffc05a !important;
 }
 #barraNewsletter.posicao-rodape .componente .newsletter-assinar,
 .coluna div.componente.newsletter .botao {
-    background: #ba493f;
-    border: 2px solid #ba493f;
+    background: #ffc05a;
+    border: 2px solid #ffc05a;
 }
 #barraNewsletter.posicao-rodape .componente .newsletter-assinar:hover:after,
 #barraNewsletter.posicao-rodape .componente .newsletter-assinar:hover:before {
-    color: #ba493f;
-    fill: #ba493f;
+    color: #ffc05a;
+    fill: #ffc05a;
 }
 .modal-modalNewsletter #modalNewsletter .componente .interno .interno-conteudo .input-conteiner .botao {
-    border: 1px solid #ba493f;
-    background: #ba493f;
+    border: 1px solid #ffc05a;
+    background: #ffc05a;
 }
 .float-contact .float-items > li > a,
 .float-contact .float-open,
 .scrollToTop {
-    background: #ba493f;
+    background: #ffc05a;
     border-radius: 50% !important;
 }
 .float-contact {
