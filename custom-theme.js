@@ -3,7 +3,7 @@ $(document).ready(function () {
     $("li.tel-phone").remove();
 
     $("#cabecalho > .barra-inicial").after(
-      '<div class="barra-superior-secundaria"><span class="primeira-compra">Use o código QA6UEGSXU e ganhe 5% de desconto na sua primeira compra!</span></div>'
+      '<div class="barra-superior-secundaria"><span class="primeira-compra">Use o código NOVOGEEK e ganhe 5% de desconto na sua primeira compra!</span></div>'
     );
 
     window.addEventListener("scroll", (event) => {
