@@ -5478,8 +5478,13 @@ div#instagram ul li a img {
 .adic-favo:hover,
 .full.menu .offers .nivel-dois .counter-offer .promo p strong,
 div#instagram h2 a {
-    color: #ffc05a;
+    color: #000;
 }
+
+#cabecalho .actions > li:hover a {
+    color: #fff;
+}
+
 @media only screen and (max-width: 767px) {
     #cabecalho {
         padding-top: 0;
