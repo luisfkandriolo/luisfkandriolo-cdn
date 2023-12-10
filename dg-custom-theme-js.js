@@ -13,6 +13,7 @@ $(document).ready(function () {
     });
 
     $("li.action-item.support > div > ul > li:nth-child(1)").remove()
+    $("div.span4.links-rodape.links-rodape-atendimento > ul > li:nth-child(1)").remove()
     
   }, 300);
 });
