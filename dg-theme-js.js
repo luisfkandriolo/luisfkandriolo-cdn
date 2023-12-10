@@ -4358,13 +4358,13 @@
       (t.methods.tracking = function () {
         $(".tracking").append(
           $(
-            '<form class="form-tracking"> <span> <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.5 14"><path d="M65.9,0a5.25,5.25,0,0,0-4.2,8.4L65.9,14l4.2-5.6A5.25,5.25,0,0,0,65.9,0Zm0,8.75a3.5,3.5,0,1,1,3.5-3.5A3.5,3.5,0,0,1,65.9,8.75Z" transform="translate(-60.651)"/></svg> Rastreie aqui seu pedido: </span> <div class="wrap"><input type="text" placeholder="Digite seu cÃƒÂ³digo" required><button class="btn-tracking"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2,7A4.951,4.951,0,0,1,7,2a4.951,4.951,0,0,1,5,5,4.951,4.951,0,0,1-5,5A4.951,4.951,0,0,1,2,7Zm12.3,8.7a.99.99,0,0,0,1.4-1.4l-3.1-3.1A6.847,6.847,0,0,0,14,7,6.957,6.957,0,0,0,7,0,6.957,6.957,0,0,0,0,7a6.957,6.957,0,0,0,7,7,6.847,6.847,0,0,0,4.2-1.4Z"/></svg></button></div></form>'
+            '<form class="form-tracking"> <span> <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.5 14"><path d="M65.9,0a5.25,5.25,0,0,0-4.2,8.4L65.9,14l4.2-5.6A5.25,5.25,0,0,0,65.9,0Zm0,8.75a3.5,3.5,0,1,1,3.5-3.5A3.5,3.5,0,0,1,65.9,8.75Z" transform="translate(-60.651)"/></svg> Rastreie aqui seu pedido: </span> <div class="wrap"><input type="text" placeholder="Digite seu código" required><button class="btn-tracking"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2,7A4.951,4.951,0,0,1,7,2a4.951,4.951,0,0,1,5,5,4.951,4.951,0,0,1-5,5A4.951,4.951,0,0,1,2,7Zm12.3,8.7a.99.99,0,0,0,1.4-1.4l-3.1-3.1A6.847,6.847,0,0,0,14,7,6.957,6.957,0,0,0,7,0,6.957,6.957,0,0,0,0,7a6.957,6.957,0,0,0,7,7,6.847,6.847,0,0,0,4.2-1.4Z"/></svg></button></div></form>'
           )
         ),
           $(".btn-tracking").click(function (t) {
             t.preventDefault();
             var e =
-              "https://rastreamentocorreios.info/consulta/" +
+              "https://app.melhorrastreio.com.br/app/" +
               $(".form-tracking input").val();
             window.open(e, "blank");
           });
