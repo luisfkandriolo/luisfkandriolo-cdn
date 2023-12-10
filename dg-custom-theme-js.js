@@ -11,11 +11,6 @@ $(document).ready(function () {
         $("#cabecalho").css("margin-top","30px")
       }
     });
-
-    $(".hidden-phone.rastreio-rapido > a > span").html('Melhor Rastreio')
-    $(".rastreio-rapido, .rastreio-mb").off()
-    $(".hidden-phone.rastreio-rapido > a").attr('href','https://melhorrastreio.com.br/')
-    $(".hidden-phone.rastreio-rapido > a").attr('target','blank')
     
   }, 300);
 });
