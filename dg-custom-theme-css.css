@@ -117,7 +117,7 @@ ul.keywords-tags {
 }
 
 .spanNone.banner.tarja {
-  max-height: auto !important;
+  max-height: max-content !important;
 }
 
 .spanNone.banner.tarja.slick-initialized.slick-slider .slick-prev.slick-arrow,
