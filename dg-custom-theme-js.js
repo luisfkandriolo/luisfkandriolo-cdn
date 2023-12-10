@@ -11,6 +11,8 @@ $(document).ready(function () {
         $("#cabecalho").css("margin-top","30px")
       }
     });
+
+    $("li.action-item.support > div > ul > li:nth-child(1)").remove()
     
   }, 300);
 });
