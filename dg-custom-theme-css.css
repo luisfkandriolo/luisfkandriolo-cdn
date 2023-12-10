@@ -26,9 +26,9 @@ a.scrollToTop {
   background: #3F78BB !important;
 }
 
-.float-open:hover, 
+.float-contact .float-open:hover,
 .float-items > li:hover > a {
-  background: #A8BA3F !important;
+  background: #222A33 !important;
 }
 
 .row-fluid.banner.mini-banner {
