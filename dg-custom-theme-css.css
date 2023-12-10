@@ -11,3 +11,21 @@
 #rodape .links-rodape-atendimento .icon {
   fill: #ffffff;
 }
+
+a.scrollToTop {
+    background: #3F78BB;
+}
+.scrollToTop:active, .scrollToTop:focus, .scrollToTop:hover {
+    text-decoration: none;
+    background: #235da0 !important;
+    color: #fff;
+}
+
+.row-fluid.banner.mini-banner {
+  display: none;
+}
+@media (max-width: 600px) {
+  .row-fluid.banner.mini-banner {
+    display: block;
+  }
+}
