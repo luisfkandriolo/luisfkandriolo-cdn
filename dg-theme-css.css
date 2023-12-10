@@ -5481,7 +5481,8 @@ div#instagram h2 a {
     color: #000;
 }
 
-#cabecalho .actions > li:hover a {
+#cabecalho .actions > li:hover > a,
+#cabecalho .actions > .action-item > a:hover {
     color: #fff;
 }
 
