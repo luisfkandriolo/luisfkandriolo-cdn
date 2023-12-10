@@ -23,6 +23,12 @@ $(document).ready(function () {
 
       item.innerHTML = `<a href="${uri}" style="text-decoration:none; color:inherit;">${keyword}</a>`
     })
+
+    if ($(window).width() <= 660) {
+      $(document).ready(function(){
+        $('.spanNone.banner.tarja').slick();
+      });
+    }
     
   }, 300);
 });
