@@ -113,5 +113,5 @@ ul.keywords-tags {
     background-color: #ececec !important;
 }
 #cabecalho.fixed .open-menu .line {
-  background: #fff;
+  background: #fff !important;
 }
