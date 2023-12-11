@@ -29,6 +29,11 @@ $(document).ready(function () {
         $('.spanNone.banner.tarja').slick();
       });
     }
+
+    setInterval(() => {
+      if (!document.querySelector("body.pagina-produto")) return
+      document.querySelector(".slick-next.slick-arrow")?.click()
+    }, 2000)
     
   }, 300);
 });
