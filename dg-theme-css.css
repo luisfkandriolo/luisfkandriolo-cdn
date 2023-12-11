@@ -4140,7 +4140,7 @@ div#instagram h2:after {
 }
 .breadcrumbs,
 .info-principal-produto .breadcrumbs {
-    background: #f2f2f2;
+    background: transparent;
     border: none;
     border-radius: 2px;
 }
