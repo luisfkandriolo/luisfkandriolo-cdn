@@ -4538,43 +4538,6 @@
           $(".offers .mega-recebe-prod .listagem .listagem-linha ul").append(
             '<li class="oferta3"></li>'
           ),
-          $(".full.menu .nivel-um .offers").each(function () {
-            $(this);
-            $.ajax({ url: "/ofertas-especiais", method: "get" })
-              .done(function (t) {
-                $(
-                  ".full.menu .nivel-um .offers .mega-recebe-prod .listagem > ul"
-                )
-                  .empty()
-                  .append($(t).find(".listagem .listagem-linha > ul > li")),
-                  $(
-                    ".full.menu .nivel-um .offers .mega-recebe-prod .listagem > ul"
-                  ).slick({
-                    infinite: !0,
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    autoplay: !0,
-                    speed: 250,
-                    dots: !1,
-                    afterChange: hasZoom(),
-                    prevArrow: prev,
-                    nextArrow: next,
-                    responsive: [
-                      {
-                        breakpoint: 1275,
-                        settings: { slidesToShow: 2, slidesToScroll: 2 },
-                      },
-                      {
-                        breakpoint: 1100,
-                        settings: { slidesToShow: 1, slidesToScroll: 1 },
-                      },
-                    ],
-                  });
-              })
-              .fail(function (t) {
-                console.error(t);
-              });
-          });
       }),
       (t.methods.counterOffer = function () {
         var t, e, i, o, a, s;
