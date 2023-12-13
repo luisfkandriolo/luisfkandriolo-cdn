@@ -4537,7 +4537,7 @@
           ),
           $(".offers .mega-recebe-prod .listagem .listagem-linha ul").append(
             '<li class="oferta3"></li>'
-          ),
+          )
       }),
       (t.methods.counterOffer = function () {
         var t, e, i, o, a, s;
