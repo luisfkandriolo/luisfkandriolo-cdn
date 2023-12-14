@@ -5946,7 +5946,7 @@ body .sobrenos article a {
     text-decoration: underline;
 }
 #listagemProdutos.listagem .listagem-item.produto-adicionado .acoes-produto,
-.listagem.aproveite-tambem .listagem-item.produto-adicionado .acoes-produto,
+.listagem.aproveite-tambem .listagem-item.produto-adicionado .acoes-produto {
     display: block;
 }
 #listagemProdutos.listagem .listagem-item.produto-adicionado .info-produto,
