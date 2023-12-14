@@ -137,9 +137,9 @@ ul.keywords-tags {
 
 @media (max-width: 515px) {
   .header-cupom {
-    height: 40px;
+    height: 40px !important;
   }
   #cabecalho {
-    margin-top: 50px;
+    margin-top: 50px !important;
   }
 }
