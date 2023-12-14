@@ -31,7 +31,7 @@ $(document).ready(function () {
     }
 
     setInterval(() => {
-      if (!document.querySelector("body.pagina-produto")) return
+      if (!document.querySelector(".slick-next.slick-arrow")) return
       document.querySelector(".slick-next.slick-arrow")?.click()
     }, 2000)
     
