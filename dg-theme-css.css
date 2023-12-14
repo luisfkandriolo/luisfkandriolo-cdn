@@ -2267,7 +2267,7 @@ body.tema-escuro {
 }
 #cabecalho .busca input,
 #cabecalho .busca input:focus {
-    background: #fff;
+    background: transparent;
     height: 55px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
