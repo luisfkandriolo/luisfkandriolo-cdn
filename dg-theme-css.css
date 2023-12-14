@@ -5945,3 +5945,13 @@ body .sobrenos article a {
     font-weight: 700;
     text-decoration: underline;
 }
+#listagemProdutos.listagem .listagem-item.produto-adicionado .acoes-produto,
+#listagemProdutos.listagem .listagem-item.produto-adicionado .adicionado-carrinho.bandeira-carrinho,
+.listagem.aproveite-tambem .listagem-item.produto-adicionado .acoes-produto,
+.listagem.aproveite-tambem .listagem-item.produto-adicionado .adicionado-carrinho.bandeira-carrinho {
+    display: block;
+}
+#listagemProdutos.listagem .listagem-item.produto-adicionado .info-produto,
+.listagem.aproveite-tambem .listagem-item.produto-adicionado .info-produto {
+    opacity: 1;
+}
