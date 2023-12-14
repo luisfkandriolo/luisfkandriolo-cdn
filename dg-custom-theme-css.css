@@ -126,6 +126,10 @@ ul.keywords-tags {
   }
 }
 
+.conteudo.span12 p {
+    font-size: 14px;
+}
+
 .spanNone.banner.tarja.slick-initialized.slick-slider .slick-prev.slick-arrow,
 .spanNone.banner.tarja.slick-initialized.slick-slider .slick-next.slick-arrow {
   display: none !important;
