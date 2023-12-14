@@ -134,3 +134,12 @@ ul.keywords-tags {
 .spanNone.banner.tarja.slick-initialized.slick-slider .slick-next.slick-arrow {
   display: none !important;
 }
+
+@media (max-width: 515px) {
+  .header-cupom {
+    height: 40px;
+  }
+  #cabecalho {
+    margin-top: 50px;
+  }
+}
