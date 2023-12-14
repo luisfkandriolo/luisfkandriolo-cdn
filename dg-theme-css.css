@@ -3441,7 +3441,7 @@ div#instagram h2:after {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 30%;
+    bottom: 15%;
     width: 100%;
     text-align: center;
     color: #000;
@@ -3453,7 +3453,7 @@ div#instagram h2:after {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 25%;
+    bottom: 12%;
     font-size: 14px;
     font-weight: 600;
     width: 100%;
