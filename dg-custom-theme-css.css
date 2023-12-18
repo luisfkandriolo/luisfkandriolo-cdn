@@ -152,3 +152,6 @@ ul.nivel-dois.borda-alpha [class*=span] {
     float: none;
 }
 
+.mega-recebe.span6 {
+    width: 352px;
+}
