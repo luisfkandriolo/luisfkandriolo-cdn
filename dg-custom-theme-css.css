@@ -205,7 +205,7 @@ ul.nivel-dois.borda-alpha [class*=span] {
   .menu.superior .wrap .nivel-um > li > ul > li a i.up:after {
     transform: translate(-50%, -50%) rotate(180deg);
   }
-  .menu.superior .wrap .nivel-um > li > a > i:after {
+  .menu.superior .wrap .nivel-um > li > a > i.up:after {
     transform: translate(-50%, -50%) rotate(180deg) !important;
   }
 }
