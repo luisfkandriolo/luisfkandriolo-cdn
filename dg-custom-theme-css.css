@@ -180,4 +180,16 @@ ul.nivel-dois.borda-alpha [class*=span] {
     font-size: 0;
     background: 0 0;
   }
+  .menu.superior .wrap .nivel-um > li > ul > li a i:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    display: inline-block;
+    vertical-align: middle;
+    color: #000;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
