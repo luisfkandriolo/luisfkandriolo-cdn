@@ -155,18 +155,6 @@ ul.keywords-tags {
     width: fit-content;
 }
 
-ul.nivel-dois.borda-alpha [class*=span] {
-    float: none;
-}
-
-.mega-recebe.span6 {
-    width: 352px !important;
-}
-
-.mega-categorias.span6 {
-  width: 100% !important;
-}
-
 @media (max-width: 660px) {
   .menu.superior .wrap .nivel-um li {
       margin-left: 5px;
