@@ -170,6 +170,9 @@ ul.nivel-dois.borda-alpha [class*=span] {
       position: static;
       box-shadow: none;
   }
+  .menu.superior .wrap .nivel-um li ul.active {
+    display: block !important
+  }
 
   .menu.superior .wrap .nivel-um > li > ul > li a i {
     position: absolute;
