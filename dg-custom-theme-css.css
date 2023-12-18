@@ -161,3 +161,23 @@ ul.nivel-dois.borda-alpha [class*=span] {
 .mega-categorias.span6 {
   width: 100% !important;
 }
+
+@media (max-width: 660px) {
+  .menu.superior .wrap .nivel-um li ul:not(ul.nivel-dois) {
+      display: block;
+      position: static;
+      box-shadow: none;
+      margin-left: 5px;
+  }
+
+  .menu.superior .wrap .nivel-um > li > ul > li a i {
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    display: block;
+    font-size: 0;
+    background: 0 0;
+  }
+}
