@@ -193,7 +193,70 @@ ul.keywords-tags {
     right: 20px;
     top: 2px
 }
-
 .menu.lateral.fechado .nivel-um .com-filho>a {
     padding-right: 40px
+}
+
+.full.menu .conteiner li.other-categories>.nivel-dois li.com-filho>.nivel-dois {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    left: auto
+}
+
+.full.menu .conteiner li.other-categories>.nivel-dois li.com-filho>.nivel-dois .com-filho .nivel-tres {
+    right: 100%;
+    left: auto
+}
+
+.full.menu .conteiner li.other-categories>.nivel-dois li.com-filho>.nivel-dois .mega-categorias {
+    padding: 0!important
+}
+
+.full.menu .conteiner li.other-categories>.nivel-dois li.com-filho>.nivel-dois .mega-recebe {
+    display: none!important;
+    width: auto!important
+}
+
+.full.menu .conteiner li.other-categories>.nivel-dois li.com-filho:hover>.nivel-dois {
+    display: block
+}
+.pagina-inicial .menu.lateral ul.nivel-um>li.com-filho a i {
+    display: none
+}
+.pagina-busca .menu.lateral .nivel-um>li.com-filho,.pagina-categoria .menu.lateral .nivel-um>li.com-filho {
+    border: none
+}
+
+.pagina-busca .menu.lateral .nivel-um>li.com-filho>a strong,.pagina-categoria .menu.lateral .nivel-um>li.com-filho>a strong {
+    color: #000;
+    font-weight: 400;
+    font-size: 15px
+}
+
+.pagina-busca .menu.lateral .nivel-um>li.com-filho>a i,.pagina-categoria .menu.lateral .nivel-um>li.com-filho>a i {
+    display: none
+}
+.conteudo-topo .menu.superior.visible-phone ul.nivel-um>li.com-filho>a i {
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    display: block;
+    font-size: 0;
+    background: 0 0
+}
+
+.conteudo-topo .menu.superior.visible-phone ul.nivel-um>li.com-filho>a i:after {
+    content: '\f107';
+    font-family: FontAwesome;
+    display: inline-block;
+    vertical-align: middle;
+    color: #000;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
 }
