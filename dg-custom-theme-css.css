@@ -144,6 +144,11 @@ ul.keywords-tags {
   }
 }
 
+.full.menu .conteiner .nivel-um > li > ul {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .full.menu .conteiner .nivel-um li ul:not(ul.nivel-dois) {
     left: 100% !important;
     background-color: #fff !important;
@@ -204,6 +209,9 @@ ul.nivel-dois.borda-alpha [class*=span] {
   }
   .menu.superior .wrap .nivel-um > li > ul > li a i.up:after {
     transform: translate(-50%, -50%) rotate(180deg);
+  }
+  .menu.superior .wrap .nivel-um > li > a > i:after {
+    transition: all 300ms;
   }
   .menu.superior .wrap .nivel-um > li > a > i.up:after {
     transform: translate(-50%, -50%) rotate(180deg) !important;
