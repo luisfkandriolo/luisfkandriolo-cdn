@@ -1747,13 +1747,6 @@ body.tema-escuro {
 .menu .nivel-dois {
     margin-left: 10px;
 }
-
-.menu .nivel-tres {
-    display: block;
-    position: initial;
-    box-shadow: none;
-    margin-left: 10px;
-}
     
 .tema-escuro .parcelas-produto .nav-tabs li a {
     background-color: inherit;
