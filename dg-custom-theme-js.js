@@ -34,7 +34,7 @@ $(document).ready(function () {
         item.classList.add('icon-chevron-down')
         item.addEventListener('click', event => {
           event.preventDefault()
-          item.closest('li').querySelector('ul').classList.add('active')
+          item.closest('li').querySelector('ul').classList.toggle('active')
         })
       })
     }
