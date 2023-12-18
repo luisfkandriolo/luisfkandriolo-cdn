@@ -35,6 +35,7 @@ $(document).ready(function () {
         item.addEventListener('click', event => {
           event.preventDefault()
           item.closest('li').querySelector('ul').classList.toggle('active')
+          item.classList.toggle('up')
         })
       })
     }
