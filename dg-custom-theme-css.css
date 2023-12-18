@@ -146,6 +146,8 @@ ul.keywords-tags {
 
 .full.menu .conteiner .nivel-um li ul:not(ul.nivel-dois) {
     left: 100% !important;
+    background-color: #fff !important;
+    width: fit-content;
 }
 
 ul.nivel-dois.borda-alpha [class*=span] {
@@ -154,4 +156,8 @@ ul.nivel-dois.borda-alpha [class*=span] {
 
 .mega-recebe.span6 {
     width: 352px !important;
+}
+
+.mega-categorias.span6 {
+  width: 100%;
 }
