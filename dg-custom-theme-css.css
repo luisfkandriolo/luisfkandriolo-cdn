@@ -163,10 +163,12 @@ ul.nivel-dois.borda-alpha [class*=span] {
 }
 
 @media (max-width: 660px) {
+  .menu.superior .wrap .nivel-um li {
+      margin-left: 5px;
+  }
   .menu.superior .wrap .nivel-um li ul:not(ul.nivel-dois) {
       position: static;
       box-shadow: none;
-      margin-left: 5px;
   }
 
   .menu.superior .wrap .nivel-um > li > ul > li a i {
