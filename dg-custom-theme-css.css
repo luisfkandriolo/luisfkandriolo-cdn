@@ -206,6 +206,6 @@ ul.nivel-dois.borda-alpha [class*=span] {
     transform: translate(-50%, -50%) rotate(180deg);
   }
   .menu.superior .wrap .nivel-um > li > a > i:after {
-    transform: translate(-50%, -50%) rotate(180deg);
+    transform: translate(-50%, -50%) rotate(180deg) !important;
   }
 }
