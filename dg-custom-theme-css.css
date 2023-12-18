@@ -167,11 +167,14 @@ ul.nivel-dois.borda-alpha [class*=span] {
       margin-left: 5px;
   }
   .menu.superior .wrap .nivel-um li ul:not(ul.nivel-dois) {
-      position: static;
-      box-shadow: none;
+    position: static;
+    box-shadow: none;
+    display: block;
+    max-height: 0px;
+    transition: all 300ms;
   }
   .menu.superior .wrap .nivel-um li ul.active {
-    display: block !important
+    max-height: 200px;
   }
 
   .menu.superior .wrap .nivel-um > li > ul > li a i {
@@ -183,6 +186,7 @@ ul.nivel-dois.borda-alpha [class*=span] {
     display: block;
     font-size: 0;
     background: 0 0;
+    margin: 0;
   }
   .menu.superior .wrap .nivel-um > li > ul > li a i:after {
     content: "\f107";
@@ -195,5 +199,9 @@ ul.nivel-dois.borda-alpha [class*=span] {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all 300ms;
+  }
+  .menu.superior .wrap .nivel-um > li > ul > li a i.up:after {
+    transform: translate(-50%, -50%) rotate(180deg);
   }
 }
