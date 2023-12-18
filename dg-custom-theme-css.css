@@ -172,6 +172,7 @@ ul.nivel-dois.borda-alpha [class*=span] {
     display: block;
     max-height: 0px;
     transition: all 300ms;
+    overflow: hidden;
   }
   .menu.superior .wrap .nivel-um li ul.active {
     max-height: 200px !important;
