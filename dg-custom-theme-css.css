@@ -144,7 +144,11 @@ ul.keywords-tags {
   }
 }
 
-.full.menu .conteiner .nivel-um > li > ul {
+.full.menu .conteiner .nivel-um > li:hover > a > strong {
+    color: #fff !important;
+}
+
+.full.menu .conteiner .nivel-um > li:hover > ul.nivel-dois.borda-alpha {
     display: flex;
     flex-direction: row-reverse;
 }
