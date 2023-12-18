@@ -28,12 +28,19 @@ $(document).ready(function () {
       $(document).ready(function(){
         $('.spanNone.banner.tarja').slick();
       });
+
+      document.querySelectorAll('.menu.superior .wrap .nivel-um > li > ul > li a i.icon-chevron-right').forEach(item => {
+        item.classList.remove('icon-chevron-right')
+        item.classList.add('icon-chevron-down')
+      })
     }
 
     setInterval(() => {
       if (!document.querySelector(".slick-next.slick-arrow")) return
       document.querySelector(".slick-next.slick-arrow")?.click()
     }, 2000)
+
+    
     
   }, 300);
 });
