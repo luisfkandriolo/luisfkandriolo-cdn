@@ -159,5 +159,5 @@ ul.nivel-dois.borda-alpha [class*=span] {
 }
 
 .mega-categorias.span6 {
-  width: 100%;
+  width: 100% !important;
 }
