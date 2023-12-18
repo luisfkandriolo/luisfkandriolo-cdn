@@ -32,6 +32,10 @@ $(document).ready(function () {
       document.querySelectorAll('.menu.superior .wrap .nivel-um > li > ul > li a i.icon-chevron-right').forEach(item => {
         item.classList.remove('icon-chevron-right')
         item.classList.add('icon-chevron-down')
+        item.addEventListener('click', event => {
+          event.preventDefault()
+          item.closest('li').querySelector('ul').classList.add('active')
+        })
       })
     }
 
