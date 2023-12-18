@@ -38,6 +38,14 @@ $(document).ready(function () {
           item.classList.toggle('up')
         })
       })
+
+      document.querySelectorAll('.menu.superior .wrap .nivel-um > li > a > i.icon-chevron-down').forEach(item => {
+        item.addEventListener('click', event => {
+          event.preventDefault()
+          item.closest('li').querySelector('ul').classList.toggle('active')
+          item.classList.toggle('up')
+        })
+      })
     }
 
     setInterval(() => {
