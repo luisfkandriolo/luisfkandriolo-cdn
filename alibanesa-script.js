@@ -1,4 +1,6 @@
 (function () {
+  window.lfka = {};
+
   function changeDetailsFunc() {
     let target = document.querySelector("#etapa1detalhes");
     if (!target) return;
@@ -33,7 +35,10 @@
 
   function jumpLocalizationScreen() {
     let target = document.querySelector("#btnConfirmarLocalizacao");
-    if (!target) return;
+
+    if (!target || window.lfka.eventListenerLocalization) return;
+
+    window.lfka.eventListenerLocalization = true;
     target.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
