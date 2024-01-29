@@ -53,7 +53,7 @@
       let changeTarget = document.querySelector("#btnCorrigirLocalizacao");
       let confirmTarget = document.querySelector("#btnConfirmarLocalizacao");
 
-      if (!target || window.lfka.eventListenerLocalization) return;
+      if (!changeTarget || window.lfka.eventListenerLocalization) return;
 
       window.lfka.eventListenerLocalization = true;
 
