@@ -1,6 +1,16 @@
 (function () {
   window.lfka = {};
 
+  function base64ToBytes(base64) {
+    const binString = atob(base64);
+    return Uint8Array.from(binString, (m) => m.codePointAt(0));
+  }
+
+  function bytesToBase64(bytes) {
+    const binString = String.fromCodePoint(...bytes);
+    return btoa(binString);
+  }
+
   function changeDetailsFunc() {
     let target = document.querySelector("#etapa1detalhes");
     if (!target) return;
@@ -57,7 +67,9 @@
 
       let endpoint = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=${key}`;
 
-      let addressDecoded = JSON.parse(atob(address));
+      let addressDecoded = JSON.parse(
+        new TextDecoder().decode(base64ToBytes(address))
+      );
 
       fetch(endpoint)
         .then(function (response) {
@@ -79,7 +91,10 @@
           addressDecoded.Cidade = city;
           addressDecoded.Cep = cep;
 
-          let newAddressHash = btoa(JSON.stringify(addressDecoded));
+          let newAddressHash = bytesToBase64(
+            new TextEncoder().encode(JSON.stringify(addressDecoded))
+          );
+
           document
             .querySelector("#Address")
             .setAttribute("value", newAddressHash);
