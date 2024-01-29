@@ -50,65 +50,71 @@
 
   function changeLocalizationHash() {
     try {
-      let target = document.querySelector("#btnConfirmarLocalizacao");
+      let changeTarget = document.querySelector("#btnCorrigirLocalizacao");
+      let confirmTarget = document.querySelector("#btnConfirmarLocalizacao");
 
       if (!target || window.lfka.eventListenerLocalization) return;
 
       window.lfka.eventListenerLocalization = true;
-      target.addEventListener("click", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
 
-        let lat = document
-          .querySelector("#Lat")
-          .getAttribute("value")
-          .replace(",", ".");
-        let lng = document
-          .querySelector("#Lng")
-          .getAttribute("value")
-          .replace(",", ".");
-        let address = document.querySelector("#Address").getAttribute("value");
+      changeTarget.addEventListener("click", () => {
+        confirmTarget.addEventListener("click", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
 
-        let key = "AIzaSyAGNvpDQ4gs57bQ1-UKErIoG6IsURXqCzE";
+          let lat = document
+            .querySelector("#Lat")
+            .getAttribute("value")
+            .replace(",", ".");
+          let lng = document
+            .querySelector("#Lng")
+            .getAttribute("value")
+            .replace(",", ".");
+          let address = document
+            .querySelector("#Address")
+            .getAttribute("value");
 
-        let endpoint = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=${key}`;
+          let key = "AIzaSyAGNvpDQ4gs57bQ1-UKErIoG6IsURXqCzE";
 
-        let addressDecoded = JSON.parse(
-          new TextDecoder().decode(base64ToBytes(address))
-        );
+          let endpoint = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=${key}`;
 
-        fetch(endpoint)
-          .then(function (response) {
-            return response.json();
-          })
-          .then(function (json) {
-            let number = json.results[0].address_components[0].long_name;
-            let street = json.results[0].address_components[1].long_name;
-            let district = json.results[0].address_components[2].long_name;
-            let city = json.results[0].address_components[3].long_name;
-            let cep = json.results[0].address_components[6].long_name.replace(
-              "-",
-              ""
-            );
+          let addressDecoded = JSON.parse(
+            new TextDecoder().decode(base64ToBytes(address))
+          );
 
-            addressDecoded.Numero = number;
-            addressDecoded.Logradouro = street;
-            addressDecoded.Bairro = district;
-            addressDecoded.Cidade = city;
-            addressDecoded.Cep = cep;
-            addressDecoded.Lat = lat;
-            addressDecoded.Lng = lng;
+          fetch(endpoint)
+            .then(function (response) {
+              return response.json();
+            })
+            .then(function (json) {
+              let number = json.results[0].address_components[0].long_name;
+              let street = json.results[0].address_components[1].long_name;
+              let district = json.results[0].address_components[2].long_name;
+              let city = json.results[0].address_components[3].long_name;
+              let cep = json.results[0].address_components[6].long_name.replace(
+                "-",
+                ""
+              );
 
-            let newAddressHash = bytesToBase64(
-              new TextEncoder().encode(JSON.stringify(addressDecoded))
-            );
+              addressDecoded.Numero = number;
+              addressDecoded.Logradouro = street;
+              addressDecoded.Bairro = district;
+              addressDecoded.Cidade = city;
+              addressDecoded.Cep = cep;
+              addressDecoded.Lat = lat;
+              addressDecoded.Lng = lng;
 
-            document
-              .querySelector("#Address")
-              .setAttribute("value", newAddressHash);
+              let newAddressHash = bytesToBase64(
+                new TextEncoder().encode(JSON.stringify(addressDecoded))
+              );
 
-            $("#btnConfirmarLocalizacao").closest("form").submit();
-          });
+              document
+                .querySelector("#Address")
+                .setAttribute("value", newAddressHash);
+
+              $("#btnConfirmarLocalizacao").closest("form").submit();
+            });
+        });
       });
     } catch (error) {
       console.error("[lfka error]" + error);
