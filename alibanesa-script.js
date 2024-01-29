@@ -14,8 +14,8 @@
           );
 
         target
-          .querySelector("#collapseAditionals")
-          .addEventListener("click", (e) => {
+          ?.querySelector("#collapseAditionals")
+          ?.addEventListener("click", (e) => {
             e.preventDefault();
             e.stopPropagation();
             e.target.classList.add("active");
