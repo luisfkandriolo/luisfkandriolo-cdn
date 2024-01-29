@@ -1,16 +1,6 @@
 (function () {
   window.lfka = {};
 
-  function base64ToBytes(base64) {
-    const binString = atob(base64);
-    return Uint8Array.from(binString, (m) => m.codePointAt(0));
-  }
-
-  function bytesToBase64(bytes) {
-    const binString = String.fromCodePoint(...bytes);
-    return btoa(binString);
-  }
-
   function changeDetailsFunc() {
     try {
       let target = document.querySelector("#etapa1detalhes");
