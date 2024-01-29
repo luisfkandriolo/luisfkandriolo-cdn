@@ -107,7 +107,7 @@
               .querySelector("#Address")
               .setAttribute("value", newAddressHash);
 
-            e.target.closest("form").submit();
+            $("#btnConfirmarLocalizacao").closest("form").submit();
           });
       });
     } catch (error) {
