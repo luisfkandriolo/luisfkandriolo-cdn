@@ -79,10 +79,10 @@
           addressDecoded.Cidade = city;
           addressDecoded.Cep = cep;
 
-          let newAddressDecoded = btoa(addressDecoded);
+          let newAddressHash = btoa(JSON.stringify(addressDecoded));
           document
             .querySelector("#Address")
-            .setAttribute("value", newAddressDecoded);
+            .setAttribute("value", newAddressHash);
 
           e.closest(form).submit();
         });
