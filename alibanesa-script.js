@@ -18,7 +18,7 @@
           ?.addEventListener("click", (e) => {
             e.preventDefault();
             e.stopPropagation();
-            e.target.classList.add("active");
+            e.target.closest("#collapseAditionals").classList.toggle("active");
           });
       }
     } catch (error) {
