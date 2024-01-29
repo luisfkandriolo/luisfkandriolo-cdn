@@ -43,8 +43,6 @@
       e.preventDefault();
       e.stopPropagation();
 
-      debugger;
-
       let lat = document
         .querySelector("#Lat")
         .getAttribute("value")
@@ -59,7 +57,7 @@
 
       let endpoint = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=${key}`;
 
-      let addressDecoded = atob(address);
+      let addressDecoded = JSON.parse(atob(address));
 
       fetch(endpoint)
         .then(function (response) {
