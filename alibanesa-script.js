@@ -8,7 +8,7 @@
       if (!target.querySelector("#collapseAditionals")) {
         let aditionalText = target?.querySelector("#headingTwo .panel-title");
 
-        if (!aditionalText.innerHTML.trim().includes("Adicionais")) return;
+        if (!aditionalText?.innerHTML.trim().includes("Adicionais")) return;
 
         target
           ?.querySelector("#headingTwo")
