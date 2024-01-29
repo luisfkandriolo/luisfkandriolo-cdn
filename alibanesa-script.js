@@ -78,41 +78,39 @@
 
           let endpoint = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=${key}`;
 
-          let addressDecoded = JSON.parse(
-            new TextDecoder().decode(base64ToBytes(address))
-          );
-
           fetch(endpoint)
             .then(function (response) {
               return response.json();
             })
             .then(function (json) {
-              let number = json.results[0].address_components[0].long_name;
               let street = json.results[0].address_components[1].long_name;
               let district = json.results[0].address_components[2].long_name;
               let city = json.results[0].address_components[3].long_name;
-              let cep = json.results[0].address_components[6].long_name.replace(
-                "-",
-                ""
-              );
+              let state = json.results[0].address_components[4].short_name;
+              let zipCode =
+                json.results[0].address_components[6].long_name.replace(
+                  "-",
+                  ""
+                );
 
-              addressDecoded.Numero = number;
-              addressDecoded.Logradouro = street;
-              addressDecoded.Bairro = district;
-              addressDecoded.Cidade = city;
-              addressDecoded.Cep = cep;
-              addressDecoded.Lat = lat;
-              addressDecoded.Lng = lng;
+              let zipCodeAddress = {
+                uf: state,
+                cidade: city,
+                logradouro: street,
+                bairro: district,
+                cep: zipCode,
+                provider: "googleMaps",
+                success: true,
+              };
 
-              let newAddressHash = bytesToBase64(
-                new TextEncoder().encode(JSON.stringify(addressDecoded))
-              );
-
-              document
-                .querySelector("#Address")
-                .setAttribute("value", newAddressHash);
-
-              $("#btnConfirmarLocalizacao").closest("form").submit();
+              $.ajax({
+                url: `/endereco/completarendereco`,
+                data: zipCodeAddress,
+                type: "GET",
+                success: function (response) {
+                  window.OnSuccessBuscarCep(response);
+                },
+              });
             });
         });
       });
