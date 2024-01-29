@@ -90,6 +90,8 @@
           addressDecoded.Bairro = district;
           addressDecoded.Cidade = city;
           addressDecoded.Cep = cep;
+          addressDecoded.Lat = lat;
+          addressDecoded.Lng = lng;
 
           let newAddressHash = bytesToBase64(
             new TextEncoder().encode(JSON.stringify(addressDecoded))
@@ -99,7 +101,7 @@
             .querySelector("#Address")
             .setAttribute("value", newAddressHash);
 
-          e.closest(form).submit();
+          e.closest("form").submit();
         });
     });
   }
