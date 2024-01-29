@@ -38,7 +38,7 @@
     }
   }
 
-  function changeLocalizationHash() {
+  function preventLocalizationError() {
     try {
       let changeTarget = document.querySelector("#btnCorrigirLocalizacao");
       let confirmTarget = document.querySelector("#btnConfirmarLocalizacao");
@@ -115,7 +115,7 @@
   const changeDetails = setInterval(() => {
     try {
       changeDetailsFunc();
-      changeLocalizationHash();
+      preventLocalizationError();
     } catch (error) {
       console.error("[lfka error]" + error);
       clearInterval(changeDetails);
