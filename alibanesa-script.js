@@ -43,7 +43,7 @@
     }
   }
 
-  function jumpLocalizationScreen() {
+  function changeLocalizationHash() {
     let target = document.querySelector("#btnConfirmarLocalizacao");
 
     if (!target || window.lfka.eventListenerLocalization) return;
@@ -101,7 +101,7 @@
             .querySelector("#Address")
             .setAttribute("value", newAddressHash);
 
-          e.closest("form").submit();
+          e.target.closest("form").submit();
         });
     });
   }
@@ -110,7 +110,7 @@
   const changeDetails = setInterval(() => {
     try {
       changeDetailsFunc();
-      jumpLocalizationScreen();
+      changeLocalizationHash();
     } catch (error) {
       console.error("[lfka error]" + error);
       clearInterval(changeDetails);
