@@ -113,6 +113,7 @@
 
   // change aditional details
   const changeDetails = setInterval(() => {
+    if (window.location.search.includes("nolfka")) return;
     try {
       changeDetailsFunc();
       preventLocalizationError();
