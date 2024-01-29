@@ -10,6 +10,8 @@
 
         if (!aditionalText?.innerHTML.trim().includes("Adicionais")) return;
 
+        target.classList.add("isAditionals");
+
         target
           ?.querySelector("#headingTwo")
           ?.insertAdjacentHTML(
