@@ -25,7 +25,7 @@
   padding: 5px 15px;
 }
 #etapa1detalhes.isAditionals .panel-body.active {
-  height: 210px;
+  height: 200px;
   overflow-y: scroll;
 }
 
