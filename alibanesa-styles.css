@@ -23,6 +23,7 @@
   height: 0;
   transition: all 300ms;
   overflow: hidden;
+  padding: 5px 15px;
 }
 #etapa1detalhes .panel-body.active {
   height: 210px;
