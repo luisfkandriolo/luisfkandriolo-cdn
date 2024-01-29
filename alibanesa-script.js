@@ -31,20 +31,46 @@
     }
   }
 
-  function removeAdjustLocalizationButton() {
-    let target = document.querySelector("#btnCorrigirLocalizacao");
+  function jumpLocalizationScreen() {
+    let target = document.querySelector("#btnConfirmarLocalizacao");
     if (!target) return;
-    target?.remove();
+    target.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      debugger;
+
+      let lat = document
+        .querySelector("#Lat")
+        .getAttribute("value")
+        .replace(",", ".");
+      let lng = document
+        .querySelector("#Lng")
+        .getAttribute("value")
+        .replace(",", ".");
+
+      let key = "AIzaSyAGNvpDQ4gs57bQ1-UKErIoG6IsURXqCzE";
+
+      let endpoint = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=${key}`;
+
+      fetch(endpoint)
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (json) {
+          console.log(json);
+        });
+    });
   }
 
   // change aditional details
   const changeDetails = setInterval(() => {
     try {
       changeDetailsFunc();
-      removeAdjustLocalizationButton();
+      jumpLocalizationScreen();
     } catch (error) {
       console.error("[lfka error]" + error);
       clearInterval(changeDetails);
     }
-  }, 500);
+  }, 300);
 })();
