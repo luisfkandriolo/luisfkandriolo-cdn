@@ -109,6 +109,7 @@
                 type: "GET",
                 success: function (response) {
                   window.OnSuccessBuscarCep(response);
+                  window.lfka.eventListenerLocalization = false;
                 },
               });
             });
