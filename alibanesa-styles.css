@@ -1,0 +1,20 @@
+#etapa1detalhes #headingTwo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;Ï
+}
+
+#etapa1detalhes #headingTwo #collapseAditionals {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: transform 300ms;
+}
+
+#collapseAditionals.active {
+  transform: rotateX(180deg) translateY(5px);
+}
+
+#collapseAditionals svg path {
+  fill: #fff
+}
