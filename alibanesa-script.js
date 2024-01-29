@@ -19,6 +19,10 @@
             e.preventDefault();
             e.stopPropagation();
             e.target.closest("#collapseAditionals").classList.toggle("active");
+            e.target
+              .closest("#etapa1detalhes")
+              .querySelector(".panel-body")
+              .classList.toggle("active");
           });
       }
     } catch (error) {
