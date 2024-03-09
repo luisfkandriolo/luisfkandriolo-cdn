@@ -111,12 +111,20 @@
     }
   }
 
+  function changeTimeText() {
+    const tempoRetirar = document.querySelector('.tempoEstimadoSelected')?.innerText.split('-')[0]
+    const tempoEntrega = document.querySelector('.tempoEstimadoSelected')?.innerText.split('-')[1].replace('min','')
+
+    document.querySelector('.tempoEstimadoSelected').innerText = `Retirar: ${tempoRetirar} - Entregar: ${tempoEntrega-30}-${tempoEntrega} `
+  }
+
   // change aditional details
   const changeDetails = setInterval(() => {
     if (window.location.search.includes("nolfka")) return;
     try {
       changeDetailsFunc();
       preventLocalizationError();
+      changeTimeText();
     } catch (error) {
       console.error("[lfka error]" + error);
       clearInterval(changeDetails);
