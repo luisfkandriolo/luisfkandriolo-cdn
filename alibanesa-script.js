@@ -118,7 +118,7 @@
     const tempoRetirar = document.querySelector('.tempoEstimadoSelected')?.innerText.split('-')[0]
     const tempoEntrega = document.querySelector('.tempoEstimadoSelected')?.innerText.split('-')[1].replace('min','')
 
-    document.querySelector('.tempoEstimadoSelected').innerText = `Retirar: ${tempoRetirar} - Entregar: ${parseInt(tempoEntrega)-30}-${tempoEntrega}`
+    document.querySelector('.tempoEstimadoSelected').innerText = `Retirar: ${tempoRetirar}min - Entregar: ${parseInt(tempoEntrega)-30}min-${tempoEntrega}min`
 
     window.lfka.changeTime = true
   }
